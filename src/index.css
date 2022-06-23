@@ -1,4 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--primary-fonts-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+:root {
+  --bg-color-middle: #ec4c8a;
+  --bg-color-light: #fb5092;
+  --bg-color-dark: #cf4277;
+  --primary-fonts-color: #fcf6fa;
+  --body-font: 'poppins', sans-serif;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --padding-basic: 1em;
+}
+
 body {
   margin: 0;
-  font-family: 'Roboto', 'sans-serif';
+  font-family: var(--body-font);
+  color: var(--primary-fonts-color);
+  min-width: 300px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-basic);
+  background-color: var(--bg-color-middle);
+}
+
+header h1 {
+  font-size: var(--h1-font-size);
+}
+
+header .right {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+}
+
+.home,
+.details {
+  min-height: 730px;
+  background-color: var(--bg-color-dark);
+}
+
+.home .header-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.home .header-wrapper .header {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  background-image: url('./assets/covid-1.jpg');
+  background-size: cover;
+  filter: blur(3px);
+}
+
+.home .header-wrapper .date-title {
+  position: absolute;
+  right: 90px;
+  top: 70px;
+  z-index: 2;
+}
+
+.home .header-wrapper .cases-title {
+  position: absolute;
+  right: 20px;
+  top: 120px;
+  z-index: 2;
+}
+
+.home .header img {
+  height: 200px;
+  width: 100%;
+}
+
+.home .all-stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.home .all-stats .p,
+.details .stats-by-country .p {
+  background-color: var(--bg-color-dark);
+  padding: 0.1em 1em;
+  font-size: var(--small-font-size);
+}
+
+.home .all-stats .stats {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-color-light);
+  padding: var(--padding-basic);
+}
+
+.home .all-stats .stats .stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home .countries {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home .countries .country {
+  flex: 1;
+  padding: var(--padding-basic);
+  background-color: var(--bg-color-middle);
+  border: 1px solid var(--bg-color-dark);
+  text-align: center;
+}
+
+.home .countries .country .open-details {
+  position: relative;
+  margin-left: 10em;
+}
+
+.details .header-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  align-items: center;
+  min-height: 250px;
+  background-color: var(--bg-color-light);
+}
+
+.details .header-details img {
+  width: 200px;
+  height: 150px;
+  border-radius: 1em;
+}
+
+.details .header-details .country-cases {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 150px;
+  border-radius: 1em;
+  background-color: var(--bg-color-dark);
+}
+
+.details .header-details .country-cases span {
+  margin-left: 0.5em;
+}
+
+.details .stats-by-country .stats {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color-middle);
+}
+
+.details .stats-by-country .stats .stat {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-basic);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: var(--padding-basic);
+  background-color: var(--bg-color-middle);
 }
