@@ -48,7 +48,7 @@ To get a local copy up and running follow these setup steps.
 
 ## Live
 
-- Link here: [covid-metrics](https://covid-metrics.netlify.app)
+- Link here: [covid-metrics](https://covid-metrics19.netlify.app)
 
 ## Authors
 
