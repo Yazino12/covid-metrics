@@ -91,12 +91,40 @@ header .right {
   z-index: 2;
 }
 
+.home .all-stats .search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
+  background-color: var(--bg-color-between);
+  padding: 1em 2em;
+}
+
+.home .all-stats .search-bar .search-bar-input {
+  font-size: var(--font-medium);
+  background-color: var(--bg-color-light);
+  border: none;
+  border-radius: 1em;
+  padding: 0.2em 1em;
+  color: var(--primary-fonts-color);
+  width: 400px;
+}
+
+.home .all-stats .search-bar .search-bar-input::placeholder {
+  color: var(--primary-fonts-color);
+  opacity: 1;
+}
+
+.home .all-stats .search-bar .search-bar-input:focus {
+  outline: none;
+}
+
 .home .all-stats {
   display: flex;
   flex-direction: column;
 }
 
-.home .all-stats .p,
 .details .stats-by-country .p {
   background-color: var(--bg-color-between);
   padding: 0.1em 1em;

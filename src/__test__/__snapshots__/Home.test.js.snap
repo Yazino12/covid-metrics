@@ -66,11 +66,21 @@ Object {
         <div
           class="all-stats"
         >
-          <p
-            class="p"
+          <div
+            class="search-bar"
           >
-            ALL STATS
-          </p>
+            <p
+              class="p"
+            >
+              ALL STATS
+            </p>
+            <input
+              class="search-bar-input"
+              placeholder="Search"
+              type="text"
+              value=""
+            />
+          </div>
           <div
             class="stats"
           >
@@ -169,11 +179,21 @@ Object {
       <div
         class="all-stats"
       >
-        <p
-          class="p"
+        <div
+          class="search-bar"
         >
-          ALL STATS
-        </p>
+          <p
+            class="p"
+          >
+            ALL STATS
+          </p>
+          <input
+            class="search-bar-input"
+            placeholder="Search"
+            type="text"
+            value=""
+          />
+        </div>
         <div
           class="stats"
         >
