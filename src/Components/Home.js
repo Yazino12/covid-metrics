@@ -40,7 +40,7 @@ const Home = () => {
             <p>COVID UPDATE</p>
           </div>
           <div className="cases-title">
-            <h2>{global?.TotalConfirmed}</h2>
+            <h2>{global?.TotalConfirmed.toLocaleString()}</h2>
             <p>CASES WORLD-WIDE</p>
           </div>
         </div>
@@ -57,15 +57,15 @@ const Home = () => {
           </div>
           <div className="stats">
             <div className="stat confirmed">
-              <h2>{global?.TotalConfirmed}</h2>
+              <h2>{global?.TotalConfirmed.toLocaleString()}</h2>
               <p>confirmed</p>
             </div>
             <div className="stat recovered">
-              <h2>{global?.TotalRecovered}</h2>
+              <h2>{global?.TotalRecovered.toLocaleString()}</h2>
               <p>recovered</p>
             </div>
             <div className="stat deaths">
-              <h2>{global?.TotalDeaths}</h2>
+              <h2>{global?.TotalDeaths.toLocaleString()}</h2>
               <p>deaths</p>
             </div>
           </div>
