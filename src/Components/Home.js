@@ -1,42 +1,28 @@
-/* global BigInt */
-
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import Header from './Header';
 
-import { fetchData } from '../Redux/Data/data';
+import { fetchDataApi } from '../Redux/Data/data';
 
 const Home = () => {
-  const data = useSelector((state) => state.covidData);
-  const [added, setAdded] = useState();
+  const data = useSelector((state) => Object.values(state.covidData)[1]);
+  let global;
+  let countries;
+
+  if (data) {
+    [, , global] = Object.values(data);
+    [, , , countries] = Object.values(data);
+  }
 
   const Navigate = useNavigate();
   const dispatch = useDispatch();
   const condition = true;
 
-  let allConfirmed = BigInt(0);
-  let allRecovered = BigInt(0);
-  let allDeaths = BigInt(0);
-
   useEffect(() => {
-    if (data.length === 0) {
-      dispatch(fetchData());
-    }
+    dispatch(fetchDataApi());
   }, [dispatch]);
-
-  useEffect(() => {
-    data.map((country) => {
-      const [, countryObject] = country;
-      const obj = Object.values(countryObject)[0];
-      allConfirmed += BigInt(obj.confirmed);
-      allRecovered += BigInt(obj.recovered);
-      allDeaths += BigInt(obj.deaths);
-      return { allConfirmed, allRecovered, allDeaths };
-    });
-    setAdded(allConfirmed);
-  }, []);
 
   return (
     <>
@@ -49,10 +35,7 @@ const Home = () => {
             <p>COVID UPDATE</p>
           </div>
           <div className="cases-title">
-            <h2>
-              4390587
-              {added}
-            </h2>
+            <h2>{global?.TotalConfirmed}</h2>
             <p>CASES WORLD-WIDE</p>
           </div>
         </div>
@@ -60,29 +43,29 @@ const Home = () => {
           <p className="p">ALL STATS</p>
           <div className="stats">
             <div className="stat confirmed">
-              <h2>{allConfirmed}</h2>
+              <h2>{global?.TotalConfirmed}</h2>
               <p>confirmed</p>
             </div>
             <div className="stat recovered">
-              <h2>{allRecovered}</h2>
+              <h2>{global?.TotalRecovered}</h2>
               <p>recovered</p>
             </div>
             <div className="stat deaths">
-              <h2>{allDeaths}</h2>
+              <h2>{global?.TotalDeaths}</h2>
               <p>deaths</p>
             </div>
           </div>
         </div>
         <div className="countries">
-          {data.map((country) => {
-            const [countryName] = country;
+          {countries?.map((country) => {
+            const countryName = country.Country;
             const countryElement = (
-              <div className="country" key={countryName}>
+              <div className="country" key={country.ID}>
                 <BsArrowRightCircle
                   className="open-details"
                   onClick={() => Navigate(`details/${countryName}`)}
                 />
-                <h2>{country[0]}</h2>
+                <h2>{countryName}</h2>
               </div>
             );
 

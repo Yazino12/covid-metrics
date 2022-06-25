@@ -6,20 +6,48 @@ import Header from './Header';
 import wallpaper from '../assets/covid-1.jpg';
 
 const Details = () => {
-  const data = useSelector((state) => state.covidData);
+  const data = useSelector((state) => Object.values(state.covidData)[1]);
   const params = useParams();
   const condition = false;
+  let countries;
 
-  const currentCountry = data.filter((country) => {
+  if (data) {
+    [, , , countries] = Object.values(data);
+  }
+
+  const currentCountry = countries?.filter((country) => {
     let result = '';
-    if (country[0] === params.Country) result = country;
+    if (country.Country === params.Country) result = country;
     return result;
   });
-  const [[countryName, countryObject]] = currentCountry;
-  const all = Object.values(countryObject)[0];
-  const {
-    confirmed, recovered, deaths, population, updated,
-  } = all;
+
+  let all;
+  let TotalConfirmedy;
+  let TotalRecoveredy;
+  let TotalDeathsy;
+  let NewConfirmedy;
+  let NewRecoveredy;
+  let NewDeathsy;
+  let Datey;
+  if (currentCountry) {
+    [[, all]] = Object.entries(currentCountry);
+    const {
+      TotalConfirmed,
+      TotalRecovered,
+      TotalDeaths,
+      NewConfirmed,
+      NewRecovered,
+      NewDeaths,
+      Date,
+    } = all;
+    TotalConfirmedy = TotalConfirmed;
+    TotalRecoveredy = TotalRecovered;
+    TotalDeathsy = TotalDeaths;
+    NewConfirmedy = NewConfirmed;
+    NewRecoveredy = NewRecovered;
+    NewDeathsy = NewDeaths;
+    Datey = Date;
+  }
 
   return (
     <>
@@ -28,9 +56,9 @@ const Details = () => {
         <div className="header-details">
           <img src={wallpaper} alt="Covid-19 img" />
           <div className="country-cases">
-            <h2>{countryName}</h2>
+            <h2>{params.Country}</h2>
             <p>
-              {confirmed.toLocaleString()}
+              {TotalConfirmedy?.toLocaleString()}
               <span>cases</span>
             </p>
           </div>
@@ -40,23 +68,31 @@ const Details = () => {
           <div className="stats">
             <div className="stat confirmed">
               <h4>confirmed</h4>
-              <p>{confirmed?.toLocaleString()}</p>
+              <p>{TotalConfirmedy?.toLocaleString()}</p>
             </div>
             <div className="stat recovered odds">
               <h4>recovered</h4>
-              <p>{recovered?.toLocaleString()}</p>
+              <p>{TotalRecoveredy?.toLocaleString()}</p>
             </div>
             <div className="stat deaths">
               <h4>deaths</h4>
-              <p>{deaths?.toLocaleString()}</p>
+              <p>{TotalDeathsy?.toLocaleString()}</p>
             </div>
             <div className="stat population odds">
-              <h4>population</h4>
-              <p>{population?.toLocaleString()}</p>
+              <h4>new confirmed</h4>
+              <p>{NewConfirmedy?.toLocaleString()}</p>
+            </div>
+            <div className="stat population odds">
+              <h4>new confirmed</h4>
+              <p>{NewRecoveredy?.toLocaleString()}</p>
+            </div>
+            <div className="stat population odds">
+              <h4>new confirmed</h4>
+              <p>{NewDeathsy?.toLocaleString()}</p>
             </div>
             <div className="stat population">
               <h4>updated</h4>
-              <p>{updated || ''}</p>
+              <p>{Datey || ''}</p>
             </div>
           </div>
         </div>

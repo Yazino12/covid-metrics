@@ -34,8 +34,12 @@ const Header = (props) => {
   );
 };
 
+Header.defaultProps = {
+  conditionProp: true,
+};
+
 Header.propTypes = {
-  conditionProp: PropTypes.bool.isRequired,
+  conditionProp: PropTypes.bool,
 };
 
 export default Header;
