@@ -2,8 +2,8 @@ import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
-import Details from '../components/Details';
-import store from '../redux/configStore';
+import Details from '../Components/Details';
+import store from '../Redux/configStore';
 
 describe('Details tests', () => {
   test('should render', () => {
@@ -13,7 +13,7 @@ describe('Details tests', () => {
           <Details />
         </BrowserRouter>
         ,
-      </Provider>,
+      </Provider>
     );
 
     expect(details).toMatchSnapshot();
@@ -26,11 +26,11 @@ describe('Details tests', () => {
           <Details />
         </BrowserRouter>
         ,
-      </Provider>,
+      </Provider>
     );
 
     expect(
-      screen.getByRole('img', { name: /Covid-19 img/i }),
+      screen.getByRole('img', { name: /Covid-19 img/i })
     ).toBeInTheDocument();
   });
 });

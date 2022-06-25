@@ -2,8 +2,8 @@ import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
-import Footer from '../components/Footer';
-import store from '../redux/configStore';
+import Footer from '../Components/Footer';
+import store from '../Redux/configStore';
 
 describe('Footer tests', () => {
   test('should render', () => {
@@ -13,7 +13,7 @@ describe('Footer tests', () => {
           <Footer />
         </BrowserRouter>
         ,
-      </Provider>,
+      </Provider>
     );
 
     expect(footer).toMatchSnapshot();
@@ -26,11 +26,11 @@ describe('Footer tests', () => {
           <Footer />
         </BrowserRouter>
         ,
-      </Provider>,
+      </Provider>
     );
 
     expect(
-      screen.getByRole('link', { name: /Copyright ©Yasin 2022/i }),
+      screen.getByRole('link', { name: /Copyright ©Yasin 2022/i })
     ).toBeInTheDocument();
   });
 });

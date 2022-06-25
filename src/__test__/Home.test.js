@@ -2,8 +2,8 @@ import { render } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
-import Home from '../components/Home';
-import store from '../redux/configStore';
+import Home from '../Components/Home';
+import store from '../Redux/configStore';
 
 describe('Home tests', () => {
   test('should render', () => {
@@ -13,7 +13,7 @@ describe('Home tests', () => {
           <Home />
         </BrowserRouter>
         ,
-      </Provider>,
+      </Provider>
     );
 
     expect(home).toMatchSnapshot();

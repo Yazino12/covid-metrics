@@ -2,8 +2,8 @@ import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
-import Header from '../components/Header';
-import store from '../redux/configStore';
+import Header from '../Components/Header';
+import store from '../Redux/configStore';
 
 describe('Header tests', () => {
   test('should render', () => {
@@ -13,7 +13,7 @@ describe('Header tests', () => {
           <Header />
         </BrowserRouter>
         ,
-      </Provider>,
+      </Provider>
     );
 
     expect(header).toMatchSnapshot();
@@ -26,11 +26,11 @@ describe('Header tests', () => {
           <Header />
         </BrowserRouter>
         ,
-      </Provider>,
+      </Provider>
     );
 
     expect(
-      screen.getByRole('heading', { name: /COVID METRICS/i }),
+      screen.getByRole('heading', { name: /COVID METRICS/i })
     ).toBeInTheDocument();
   });
 });

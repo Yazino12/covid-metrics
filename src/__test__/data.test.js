@@ -1,4 +1,4 @@
-import covidData from '../redux/Data/data';
+import covidData from '../Redux/Data/data';
 
 const mockStore = {
   countriesReducer: [
