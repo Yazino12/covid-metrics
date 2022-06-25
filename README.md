@@ -1,51 +1,67 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Covid Metrics
 
-> Description the project.
+> Covid Metrics is a mobile web application were you can check a list of the latest Covid19 reports around the world. This app is build using React | Redux and Javascript libraries.
+
+<h2 align="center">
+  Demo 📝
+</h2>
+
+<img src="https://github.com/Yazino12/covid-metrics/blob/feature/src/assets/demo4.png?raw=true" width="1200" height="450">
+<img src="https://github.com/Yazino12/covid-metrics/blob/feature/src/assets/demo5.png?raw=true" width="1200" height="450"> 
+
+|                                                   **Mobile Version 1**                                                    |                                                   **Mobile Version 2**                                                    |                                                   **Mobile Version 3**                                                    |
+| :-----------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
+| <img src="https://github.com/Yazino12/covid-metrics/blob/feature/src/assets/demo1.png?raw=true" width="300" height="400"> | <img src="https://github.com/Yazino12/covid-metrics/blob/feature/src/assets/demo2.png?raw=true" width="300" height="400"> | <img src="https://github.com/Yazino12/covid-metrics/blob/feature/src/assets/demo3.png?raw=true" width="300" height="400"> |
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
+- Javascript
+- HTML
+- CSS
+- JSX
+- React
+- Redux
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+To get a local copy up and running follow these setup steps.
 
-To get a local copy up and running follow these simple example steps.
+**Setup**
 
-### Prerequisites
+- Open terminal and clone the project: `git clone https://github.com/Yazino12/covid-metrics.git`
+- cd into the directory `covid-metrics`
 
-### Setup
+**Prerequisites**
 
-### Install
+- You need to have `node.js` installed in your system
 
-### Usage
+**Install**
 
-### Run tests
+- On your terminal run : `npm i`
+- To run the app in the development mode : `npm start`
+- Launch the test runner : `npm test`
+- To build the app for production : `npm run build`
+- In case you run into any errors please raise an [issue](https://github.com/Yazino12/covid-metrics/issues)
 
-### Deployment
+## Live
+
+- Link here: [covid-metrics](https://covid-metrics19.netlify.app)
 
 ## Authors
 
-👤 **Author1**
+👤 **Yasin Warsame**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Yazino12](https://github.com/Yazino12)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+## Credits 💙
+
+- Original Design: [Nelson Sakwa on Behance.](https://www.behance.net/sakwadesignstudio)
 
 ## Show your support
 
@@ -53,9 +69,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- This was not possible without the help of [Microverse](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/hello_microverse_project.md).
 
 ## 📝 License
 
