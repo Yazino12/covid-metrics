@@ -8,12 +8,19 @@
   Demo 📝
 </h2>
 
-|                                                    **Desktop Version1**                                                    |                                                    **Desktop Version2**                                                    |
-| :------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------: |
-| <img src="https://github.com/Yazino12/capstone-project1/blob/dev/src/assets/demo4.png?raw=true" width="1200" height="250"> | <img src="https://github.com/Yazino12/capstone-project1/blob/dev/src/assets/demo5.png?raw=true" width="1200" height="250"> |
+| **Desktop** |
 
-|                                                   **Mobile Version 1**                                                    |                                                   **Mobile Version 2**                                                    |                                                   **Mobile Version 3**                                                    | **Mobile Version 4** |
-| :-----------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: | -------------------- |
+| :------------------------------------------------------------------------------------------------------------------------: |
+
+| <img src="https://github.com/Yazino12/capstone-project1/blob/dev/src/assets/demo4.png?raw=true" width="1200" height="450"> |
+
+| **Desktop** |
+
+| :------------------------------------------------------------------------------------------------------------------------: |
+| <img src="https://github.com/Yazino12/capstone-project1/blob/dev/src/assets/demo5.png?raw=true" width="1200" height="450"> |
+
+|                                                   **Mobile Version 1**                                                    |                                                   **Mobile Version 2**                                                    |                                                   **Mobile Version 3**                                                    |
+| :-----------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
 | <img src="https://github.com/Yazino12/capstone-project1/blob/dev/src/assets/demo1.png?raw=true" width="300" height="400"> | <img src="https://github.com/Yazino12/capstone-project1/blob/dev/src/assets/demo2.png?raw=true" width="300" height="400"> | <img src="https://github.com/Yazino12/capstone-project1/blob/dev/src/assets/demo3.png?raw=true" width="300" height="400"> |
 
 ## Built With
