@@ -73,4 +73,4 @@ To get a local copy up and running follow these setup steps.
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+- This project is [MIT](./MIT.md) licensed.
