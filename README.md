@@ -8,7 +8,7 @@
   App Preview
 </h2>
 
-<img src="https://github.com/Yazino12/covid-metrics/blob/feature/src/assets/demo.png?raw=true" width="1280" height="960">
+<img src="https://github.com/Yazino12/covid-metrics/blob/dev/src/assets/demo.png?raw=true" width="1200" height="500">
 
 ## Built With
 
