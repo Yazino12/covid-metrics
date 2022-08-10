@@ -8,12 +8,7 @@
   Demo 📝
 </h2>
 
-<img src="https://github.com/Yazino12/covid-metrics/blob/feature/src/assets/demo4.png?raw=true" width="1200" height="450">
-<img src="https://github.com/Yazino12/covid-metrics/blob/feature/src/assets/demo5.png?raw=true" width="1200" height="450"> 
-
-|                                                   **Mobile Version 1**                                                    |                                                   **Mobile Version 2**                                                    |                                                   **Mobile Version 3**                                                    |
-| :-----------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
-| <img src="https://github.com/Yazino12/covid-metrics/blob/feature/src/assets/demo1.png?raw=true" width="300" height="400"> | <img src="https://github.com/Yazino12/covid-metrics/blob/feature/src/assets/demo2.png?raw=true" width="300" height="400"> | <img src="https://github.com/Yazino12/covid-metrics/blob/feature/src/assets/demo3.png?raw=true" width="300" height="400"> |
+<img src="https://github.com/Yazino12/covid-metrics/blob/feature/src/assets/demo.png?raw=true" width="1200" height="450">
 
 ## Built With
 
