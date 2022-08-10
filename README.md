@@ -5,7 +5,7 @@
 > Covid Metrics is a mobile web application were you can check a list of the latest Covid19 reports around the world. This app is build using React | Redux and Javascript libraries.
 
 <h2 align="center">
-  Demo 📝
+  App Preview
 </h2>
 
 <img src="https://github.com/Yazino12/covid-metrics/blob/feature/src/assets/demo.png?raw=true" width="1200" height="450">
